@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Button from "../styles/Button";
+import Button from "./styles/Button";
 
 const Table = styled.table`
   border-collapse: collapse;
@@ -53,7 +53,9 @@ const LeaderboardTable = props => (
             <td>{player.score}</td>
             <ButtonContainer>
               <Button primary>Edit</Button>
-              <Button danger>Delete</Button>
+              <Button danger onClick={() => props.removePlayer(player.id)}>
+                Delete
+              </Button>
             </ButtonContainer>
           </tr>
         ))
