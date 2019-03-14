@@ -14,7 +14,7 @@ const Table = styled.table`
     border-bottom: 2px solid #dedede;
   }
 
-  td {
+  tr {
     border-bottom: 1px solid #dedede;
   }
 
